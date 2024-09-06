@@ -71,7 +71,7 @@
         app:layout_constraintStart_toStartOf="@id/contactless_card"
         app:layout_constraintTop_toBottomOf="@id/contactless_card"
         app:layout_constraintEnd_toEndOf="@id/contactless_card"
-        android:text="TEMASSIZ\n    İŞLEM"
+        android:text="@string/temassiz_n_lem"
         android:textStyle="bold"
         android:textColor="@color/card_btn_text"
         android:layout_marginTop="6dp"/>
@@ -95,7 +95,7 @@
         app:layout_constraintStart_toStartOf="@id/lock_view"
         app:layout_constraintTop_toBottomOf="@id/lock_view"
         app:layout_constraintEnd_toEndOf="@id/lock_view"
-        android:text="DONDUR"
+        android:text="@string/dondur"
         android:textStyle="bold"
         android:textColor="@color/card_btn_text"
         android:layout_marginTop="6dp"/>
@@ -119,7 +119,7 @@
         app:layout_constraintStart_toStartOf="@id/settings_view"
         app:layout_constraintTop_toBottomOf="@id/settings_view"
         app:layout_constraintEnd_toEndOf="@id/settings_view"
-        android:text="AYARLAR"
+        android:text="@string/ayarlar"
         android:textStyle="bold"
         android:textColor="@color/card_btn_text"
         android:layout_marginTop="6dp"/>
@@ -141,7 +141,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="BAĞLI HESAPLAR"
+            android:text="@string/ba_li_hesaplar"
             android:textColor="@color/secsechesap"
             android:textStyle="bold"
             app:layout_constraintHorizontal_bias=".1"
@@ -171,7 +171,7 @@
             app:layout_constraintStart_toEndOf="@id/ilk_hesap"
             app:layout_constraintEnd_toEndOf="@id/baglı_hesaplar"
             app:layout_constraintTop_toTopOf="@id/ilk_hesap"
-            android:text="İLK HESABIM"
+            android:text="@string/lk_hesabim"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_marginStart="32dp"/>
@@ -183,7 +183,7 @@
             app:layout_constraintStart_toStartOf="@id/text_ilk_hesap"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/ilk_hesap"
-            android:text="₺0,00"
+            android:text="@string/_0_00"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="4dp"
@@ -196,7 +196,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/text_hesap_no"
             app:layout_constraintTop_toTopOf="@id/ilk_hesap"
-            android:text="›"
+            android:text="@string/right_arrow"
             android:textSize="25sp"
             android:textStyle="bold"
             android:layout_marginEnd="24dp" />
@@ -224,7 +224,7 @@
             app:layout_constraintStart_toEndOf="@id/ikili_hesap"
             app:layout_constraintEnd_toEndOf="@id/baglı_hesaplar"
             app:layout_constraintTop_toTopOf="@id/ikili_hesap"
-            android:text="İKİLİ HESAP"
+            android:text="@string/ikili_hesap"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_marginStart="26dp"/>
@@ -237,7 +237,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@drawable/aktif_et"
-            android:text="AKTİF ET"
+            android:text="@string/aktif_et"
             android:textColor="@color/white"
             android:layout_marginEnd="48dp"
             android:layout_marginBottom="24dp"/>
