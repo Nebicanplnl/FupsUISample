@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#E6E6E6</color>
+    <color name="home_icon">#F6F5FA</color>
+    <color name="Fups">#0B58CF</color>
+    <color name="Constraint_one">#EDF3FF</color>
+    <color name="star_icon">#185DD8</color>
+    <color name="btn_plus">#26BF65</color>
+    <color name="btn_up">#28272C</color>
+    <color name="secsechesap">#929292</color>
+    <color name="paralimityazısı">#555458</color>
+    <color name="aktifet">#165ED6</color>
+    <color name="card_btn_text">#555459</color>
+    <color name="chat">#BDBCC2</color>
+    <color name="chatBackground">#F1F0F5</color>
+</resources>

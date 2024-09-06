@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CardsFragment"
+    android:background="@color/home_icon">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_fups"
+        android:src="@drawable/bell_icon"/>
+
+
+    <TextView
+        android:id="@+id/text_fups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fups"
+        android:textStyle="bold"
+        android:textColor="@color/Fups"
+        android:textSize="36sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/text_fups"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fups_sa"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="64dp"/>
+
+    <ImageView
+        android:id="@+id/card_view"
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_fups"
+        android:src="@drawable/fups_card_type_standard"
+        android:layout_marginTop="16dp"/>
+
+    <ImageButton
+        android:id="@+id/contactless_card"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/card_btn"
+        android:src="@drawable/contactless_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/temassız_işlem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/contactless_card"
+        app:layout_constraintTop_toBottomOf="@id/contactless_card"
+        app:layout_constraintEnd_toEndOf="@id/contactless_card"
+        android:text="TEMASSIZ\n    İŞLEM"
+        android:textStyle="bold"
+        android:textColor="@color/card_btn_text"
+        android:layout_marginTop="6dp"/>
+
+    <ImageButton
+        android:id="@+id/lock_view"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/card_btn"
+        android:src="@drawable/lock_open_filled_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/lock_view"
+        app:layout_constraintTop_toBottomOf="@id/lock_view"
+        app:layout_constraintEnd_toEndOf="@id/lock_view"
+        android:text="DONDUR"
+        android:textStyle="bold"
+        android:textColor="@color/card_btn_text"
+        android:layout_marginTop="6dp"/>
+
+    <ImageButton
+        android:id="@+id/settings_view"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/card_btn"
+        android:src="@drawable/baseline_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".70"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/settings_view"
+        app:layout_constraintTop_toBottomOf="@id/settings_view"
+        app:layout_constraintEnd_toEndOf="@id/settings_view"
+        android:text="AYARLAR"
+        android:textStyle="bold"
+        android:textColor="@color/card_btn_text"
+        android:layout_marginTop="6dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temassız_işlem"
+        android:background="@color/white"
+        android:layout_marginTop="14dp">
+
+
+        <TextView
+            android:id="@+id/baglı_hesaplar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="BAĞLI HESAPLAR"
+            android:textColor="@color/secsechesap"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias=".1"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/ilk_hesap"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="110dp"
+            android:background="@drawable/btn_gonder"
+            android:src="@drawable/wallet_icon2"
+            android:text=""
+            android:textColor="@color/btn_up"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="@id/baglı_hesaplar"
+            app:layout_constraintHorizontal_bias=".1"
+            app:layout_constraintStart_toStartOf="@id/baglı_hesaplar"
+            app:layout_constraintTop_toBottomOf="@id/baglı_hesaplar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/text_ilk_hesap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/ilk_hesap"
+            app:layout_constraintEnd_toEndOf="@id/baglı_hesaplar"
+            app:layout_constraintTop_toTopOf="@id/ilk_hesap"
+            android:text="İLK HESABIM"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"/>
+
+        <TextView
+            android:id="@+id/text_hesap_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_ilk_hesap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ilk_hesap"
+            android:text="₺0,00"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_bias=".8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_hesap_no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/text_hesap_no"
+            app:layout_constraintTop_toTopOf="@id/ilk_hesap"
+            android:text="›"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="24dp" />
+
+        <ImageButton
+            android:id="@+id/ikili_hesap"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_gonder"
+            android:src="@drawable/baseline_fiber_smart_record_24"
+            android:text=""
+            android:textColor="@color/btn_up"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="@id/ilk_hesap"
+            app:layout_constraintHorizontal_bias=".1"
+            app:layout_constraintStart_toStartOf="@id/ilk_hesap"
+            app:layout_constraintTop_toBottomOf="@id/ilk_hesap"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/text_ikili_hesap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/ikili_hesap"
+            app:layout_constraintEnd_toEndOf="@id/baglı_hesaplar"
+            app:layout_constraintTop_toTopOf="@id/ikili_hesap"
+            android:text="İKİLİ HESAP"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="26dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            app:layout_constraintStart_toStartOf="@id/text_hesap_no"
+            app:layout_constraintTop_toBottomOf="@id/text_hesap_no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/aktif_et"
+            android:text="AKTİF ET"
+            android:textColor="@color/white"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="24dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

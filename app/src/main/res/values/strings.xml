@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FupsUISample</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hesaplar">Hesaplar</string>
+    <string name="kartlar">Kartlar</string>
+    <string name="lemler">İşlemler</string>
+    <string name="kampanyalar">Kampanyalar</string>
+    <string name="chat">Chat</string>
+    <string name="fups">FUPS</string>
+</resources>
