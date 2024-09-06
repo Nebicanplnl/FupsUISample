@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="24dp">
+
+    <ImageView
+        android:id="@+id/netflix_image"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:src="@drawable/netflix"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/netflix_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/netflix_image"
+        android:layout_gravity="end"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/netflix_logo_icon"/>
+
+    <TextView
+        android:id="@+id/text_baslık"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Netflix Abonelik Ödemelerinde Anında Nakit\nİade!"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/btn_up"/>
+
+    <TextView
+        android:id="@+id/text_açıklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:text="Netflix abonelik ödemeni FUPS Kart ile yap,\nüyeliködemene 19 TL anında nakit iade\nolsun. Kampanya 31 Ağustos 2024 tarihine\nkadar geçerli, her ay 19TL kazanabilirsin."
+        android:layout_marginBottom="44dp"
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/campaignText"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
