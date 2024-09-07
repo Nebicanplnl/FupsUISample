@@ -40,7 +40,7 @@
         android:layout_marginTop="48dp"
         android:background="@drawable/chat_ara"
         android:layout_margin="24dp"
-        android:hint="@string/kampanya_ara"
+        android:hint="     Kampanya ara"
         android:textStyle="bold"
         android:drawableEnd="@drawable/magnifying_glass_icon2"
         android:paddingEnd="12dp"/>
@@ -68,7 +68,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewCampaign"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
