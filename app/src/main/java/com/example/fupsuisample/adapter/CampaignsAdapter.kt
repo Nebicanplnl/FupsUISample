@@ -26,8 +26,7 @@ class CampaignsAdapter(private val dataArrayList: List<DataCampaign>): RecyclerV
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val data = dataArrayList[position]
-        holder.bind(data)
+        holder.bind(dataArrayList[position])
     }
 
     override fun getItemCount(): Int {

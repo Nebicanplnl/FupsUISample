@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -24,6 +24,7 @@
             android:layout_marginStart="16dp" />
 
         <ImageButton
+            android:id="@+id/imageView"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/kartopu_bottomsheet"
@@ -33,7 +34,7 @@
             android:src="@drawable/ic_kartopu"/>
 
         <TextView
-            android:id="@+id/açıklama"
+            android:id="@+id/aciklama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="İnaktif Müşteri İşletim Ücreti"
@@ -44,7 +45,7 @@
             android:layout_marginTop="4dp"/>
 
         <TextView
-            android:id="@+id/ücret"
+            android:id="@+id/ucret"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="-₺0,21"
