@@ -48,3 +48,12 @@ The aim of this project is to design a user-friendly and sleek interface for the
 
 ## Contribution
 If you would like to contribute, feel free to send a pull request or open an issue. We welcome your feedback!
+
+
+
+
+# Video
+
+https://github.com/user-attachments/assets/5ce1e292-a5a2-4217-99c3-4cd3a874e69d
+
+
