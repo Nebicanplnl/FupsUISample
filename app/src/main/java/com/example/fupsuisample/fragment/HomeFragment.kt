@@ -38,15 +38,12 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val bottomSheet = binding.bottomSheet
         val bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet)
-        val bottomSheetBehavior1 = BottomSheetBehavior.from(bottomSheet)
 
         // Başlangıç ve bitiş yüksekliğini ayarlayın
-        bottomSheetBehavior1.state = BottomSheetBehavior.STATE_COLLAPSED // veya STATE_EXPANDED
-        bottomSheetBehavior1.isDraggable = true // Kaydırma özelliğini etkinleştir
-        bottomSheetBehavior1.peekHeight = 300 // Yalnızca küçük bir kısmının göründüğü yükseklik
+        bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED // veya STATE_EXPANDED
+        bottomSheetBehavior.isDraggable = true // Kaydırma özelliğini etkinleştir
+        bottomSheetBehavior.peekHeight = 300 // Yalnızca küçük bir kısmının göründüğü yükseklik
 
-        // Başlangıçta daraltılmış durumda olacak
-        bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
 
         bottomSheetBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {
