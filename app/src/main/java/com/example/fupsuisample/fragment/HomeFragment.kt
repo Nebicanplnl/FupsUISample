@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bottomSheet = view.findViewById<FrameLayout>(R.id.bottomSheet)
+        val bottomSheet = binding.bottomSheet
         val bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet)
         val bottomSheetBehavior1 = BottomSheetBehavior.from(bottomSheet)
 
@@ -57,11 +57,11 @@ class HomeFragment : Fragment() {
                 // Kaydırma sırasında yapılacak animasyonlar
             }
         })
+
         binding.bottomSheetRcv.setHasFixedSize(true)
         val recyclerView: RecyclerView = binding.bottomSheetRcv
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = BottomSheetAdapter(MockBottom.getItemBottomList())
-
     }
 
     }

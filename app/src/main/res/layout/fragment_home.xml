@@ -287,7 +287,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/constraint_one"
@@ -344,24 +344,18 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
-
-        <FrameLayout
-            android:id="@+id/bottomSheet"
-            android:layout_width="match_parent"
-            android:layout_height="800dp"
-            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-            app:behavior_peekHeight="200dp"
-            android:background="@drawable/bottom_sheet_shape">
+        android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/bottomSheet"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="6dp">
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+                android:padding="6dp"
+                android:background="@drawable/bottom_sheet_shape">
 
                 <ImageView
                     android:id="@+id/horizontal_rule"
@@ -388,14 +382,6 @@
 
             </LinearLayout>
 
-
-        </FrameLayout>
-
-
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -126,12 +126,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/temassız_işlem"
         android:background="@color/white"
-        android:layout_marginTop="14dp">
+        android:layout_marginTop="24dp">
 
 
         <TextView
@@ -205,7 +205,7 @@
             android:id="@+id/ikili_hesap"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="18dp"
             android:background="@drawable/btn_gonder"
             android:src="@drawable/baseline_fiber_smart_record_24"
             android:text=""
@@ -240,7 +240,7 @@
             android:text="@string/aktif_et"
             android:textColor="@color/white"
             android:layout_marginEnd="48dp"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="32dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
